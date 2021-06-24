@@ -1,0 +1,104 @@
+//768px
+@include media-md {
+	.about {
+		h1 {
+			font-size: 2rem;
+		}
+
+		h2 {
+			font-size: 1.8rem;
+			margin-top: 0;
+		}
+	}
+	body {
+		h1 {
+			font-size: 5rem;
+		}
+
+		h2 {
+			font-size: 4rem;
+		}
+	}
+
+	.projects {
+		&-project {
+			margin: 0 10px;
+			width: 60vw;
+
+			img {
+				padding-bottom: 3rem;
+			}
+		}
+	}
+
+	.navbar {
+		font-size: 2rem;
+	}
+
+	.home {
+		.info-text {
+			@include flexCenter(row);
+			margin-left: 0;
+			width: 60%;
+
+			p,
+			a {
+				font-size: 1.75rem;
+			}
+		}
+	}
+}
+
+//992px
+@include media-lg {
+	.projects {
+		@include flexCenter(row);
+		padding-bottom: 7rem;
+
+		&-project {
+			img {
+				padding-bottom: 1rem;
+			}
+		}
+	}
+
+	.home {
+		.info-text {
+			width: 40%;
+		}
+	}
+
+	.about {
+		width: 60vw;
+
+		h1 {
+			font-size: 2.15rem;
+		}
+
+		h2 {
+			font-size: 1.75rem;
+		}
+		h4 {
+			font-size: 1rem;
+		}
+	}
+}
+
+//1200px
+@include media-xl {
+	.home {
+		.info-text {
+			width: 550px;
+		}
+	}
+
+	.about {
+		h1 {
+			font-size: 2.6rem;
+		}
+
+		h2 {
+			font-size: 2rem;
+		}
+	}
+}

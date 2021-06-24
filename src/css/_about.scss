@@ -1,0 +1,60 @@
+.about {
+	width: 80vw;
+	margin: 0 auto;
+	padding-top: $paddingTop;
+	@include flexCenter(column);
+	height: 100%;
+	@include fadeIn;
+
+	h1 {
+		font-size: 0.9rem;
+	}
+
+	h2 {
+		font-size: 0.85rem;
+		margin-top: 0;
+	}
+}
+
+.jobs {
+	margin: 3rem;
+	width: 75%;
+}
+
+.job {
+	clear: both;
+	width: 100%;
+	background-color: $backGround1;
+	border-bottom: 4px solid $subTextcolor;
+	display: flex;
+	flex-direction: column;
+
+	h3 {
+		color: $subTextcolor;
+		margin: 1rem;
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: 1rem;
+	}
+
+	h4 {
+		margin: 1rem;
+		margin-top: 0;
+		margin-bottom: 0;
+
+		color: $textColor;
+		font-size: 0.8rem;
+	}
+
+	h5 {
+		margin: 1rem;
+		margin-top: 0;
+		color: $subTextcolor;
+		font-size: 1rem;
+	}
+
+	#date {
+		margin-top: 0;
+		float: right;
+	}
+}

@@ -1,0 +1,57 @@
+@mixin transition-ease {
+	transition: all 0.5s ease-in-out;
+}
+
+@mixin flexCenter($flexDirection) {
+	display: flex;
+	align-items: center;
+	flex-direction: $flexDirection;
+}
+
+@mixin fadeIn {
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@mixin background {
+	background: linear-gradient(
+			to right,
+			rgba($backGround1, 0.9),
+			rgba($backGround1, 0.5)
+		),
+		url('../assets/mephoto.JPG') center top;
+	background-repeat: no-repeat;
+	background-position: 50% 25%;
+	background-size: cover;
+	background-attachment: fixed !important;
+	position: static !important;
+	z-index: -1 !important;
+}
+
+@mixin media-md {
+	@media screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin media-lg {
+	@media screen and (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin media-xl {
+	@media screen and (min-width: 1200px) {
+		@content;
+	}
+}
