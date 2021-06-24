@@ -1,7 +1,30 @@
 import { Link, animateScroll as scroll } from 'react-scroll';
+import { useEffect, useState } from 'react';
 
 function Navbar(props) {
-	const { currentPage, handleClick } = props;
+	const { currentPage, updatePage, handleClick } = props;
+	const [offset, setOffset] = useState(0);
+
+	useEffect(() => {
+		window.onscroll = () => {
+			setOffset(window.pageYOffset);
+		};
+	}, []);
+
+	useEffect(() => {
+		if (offset < document.body.scrollHeight / 4) {
+			return updatePage('home');
+		} else if (
+			offset > document.body.scrollHeight / 4 &&
+			offset < document.body.scrollHeight / 2
+		) {
+			return updatePage('about');
+		} else if (offset > document.body.scrollHeight / 2) {
+			return updatePage('projects');
+		}
+	});
+	console.log(currentPage);
+
 	return (
 		<header>
 			<nav className='navbar'>

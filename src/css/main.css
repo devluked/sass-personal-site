@@ -395,13 +395,6 @@
 }
 
 body {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.5))), url("../assets/mephoto.JPG") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.5)), url("../assets/mephoto.JPG") center top;
-  background-repeat: no-repeat;
-  background-position: 50% 25%;
-  background-size: cover;
-  background-attachment: fixed !important;
-  z-index: -1 !important;
   width: 80%;
   margin: 0 auto;
   height: 140vh;
@@ -423,6 +416,13 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 1rem;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.5))), url("../assets/mephoto.JPG") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.5)), url("../assets/mephoto.JPG") center top;
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+  background-size: cover;
+  background-attachment: fixed !important;
+  z-index: -1 !important;
 }
 
 header {

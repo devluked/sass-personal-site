@@ -6,11 +6,15 @@ import { scroller } from 'react-scroll';
 function Pages() {
 	const [currentPage, updatePage] = useState('home');
 	const handleClick = (pageName) => {
-		updatePage(pageName);
+		//updatePage(pageName);
 	};
 	return (
 		<div>
-			<Navbar currentPage={currentPage} handleClick={handleClick} />
+			<Navbar
+				currentPage={currentPage}
+				updatePage={updatePage}
+				handleClick={handleClick}
+			/>
 			<Page pageName={currentPage} />
 			<div>
 				<div className='social-icons'>
