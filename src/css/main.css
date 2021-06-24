@@ -401,7 +401,6 @@ body {
   background-position: 50% 25%;
   background-size: cover;
   background-attachment: fixed !important;
-  position: static !important;
   z-index: -1 !important;
   width: 80%;
   margin: 0 auto;
