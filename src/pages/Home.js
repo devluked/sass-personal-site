@@ -27,7 +27,10 @@ function Home() {
 						Email
 					</a>
 					, or check out my
-					<a rel='noreferrer' target='_blank' href='www.github.com/devluked'>
+					<a
+						rel='noreferrer'
+						target='_blank'
+						href='https://www.github.com/devluked'>
 						{' '}
 						github.
 					</a>
