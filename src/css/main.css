@@ -447,11 +447,6 @@
   }
 }
 
-html {
-  -ms-scroll-snap-type: y proximity;
-      scroll-snap-type: y proximity;
-}
-
 body {
   overflow-y: scroll;
   overflow-x: hidden;
