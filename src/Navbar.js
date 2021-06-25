@@ -1,4 +1,4 @@
-import { Link } from 'react-scroll';
+import { a } from 'react-scroll';
 import { useEffect, useState } from 'react';
 
 function Navbar(props) {
@@ -27,24 +27,24 @@ function Navbar(props) {
 	return (
 		<header>
 			<nav className='navbar'>
-				<Link to='home' smooth={true}>
+				<a href='#home'>
 					<button onClick={() => handleClick('home')}>
 						<p className={currentPage === 'home' ? 'active' : ''}>Home</p>
 					</button>
-				</Link>
-				<Link to='about' smooth={true}>
+				</a>
+				<a href='#about'>
 					<button onClick={() => handleClick('about')}>
 						<p className={currentPage === 'about' ? 'active' : ''}>About Me</p>
 					</button>
-				</Link>
+				</a>
 
-				<Link to='projects' smooth={true}>
+				<a href='#projects'>
 					<button onClick={() => handleClick('projects')}>
 						<p className={currentPage === 'projects' ? 'active' : ''}>
 							Projects
 						</p>
 					</button>
-				</Link>
+				</a>
 			</nav>
 		</header>
 	);

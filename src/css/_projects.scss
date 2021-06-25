@@ -5,6 +5,8 @@
 	@include background('../assets/mephoto3.jpg');
 
 	height: 100vh;
+	width: 100vw;
+
 	@include fadeIn;
 
 	.projects-container {

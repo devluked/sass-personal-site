@@ -5,24 +5,34 @@ import {
 	Animator,
 	ScrollContainer,
 	ScrollPage,
+	batch,
 	Fade,
+	FadeIn,
+	Move,
+	MoveIn,
+	MoveOut,
+	Sticky,
+	StickyIn,
+	ZoomIn,
 } from 'react-scroll-motion';
+
+const FadeUp = batch(Fade(), Move(), Sticky());
 
 function Page(props) {
 	return (
 		<ScrollContainer>
 			<ScrollPage page={0}>
-				<Animator animation={Fade(0.4, 1)}>
+				<Animator animation={Fade()}>
 					<Home />
 				</Animator>
 			</ScrollPage>
 			<ScrollPage page={1}>
-				<Animator animation={Fade(0.4, 1)}>
+				<Animator animation={Fade()}>
 					<About />
 				</Animator>
 			</ScrollPage>
 			<ScrollPage page={2}>
-				<Animator animation={Fade(0.4, 1)}>
+				<Animator animation={Fade()}>
 					<Projects />
 				</Animator>
 			</ScrollPage>

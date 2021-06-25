@@ -1,11 +1,11 @@
 .about {
-	scroll-snap-align: start;
-
 	@include background('../assets/mephoto2.JPG');
 	margin: 0 auto;
 	padding-top: $paddingTop;
 	@include flexCenter(column);
 	height: 100vh;
+	width: 100vw;
+
 	background-position: 60%;
 
 	@include fadeIn;
