@@ -13,8 +13,7 @@ body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	@include fadeIn;
 	@include flexCenter(column);
-	padding-top: 1rem;
-	@include background;
+	padding-top: 0rem;
 }
 
 header {

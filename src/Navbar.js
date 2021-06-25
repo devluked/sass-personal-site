@@ -1,4 +1,4 @@
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import { useEffect, useState } from 'react';
 
 function Navbar(props) {
@@ -23,7 +23,6 @@ function Navbar(props) {
 			return updatePage('projects');
 		}
 	});
-	console.log(currentPage);
 
 	return (
 		<header>

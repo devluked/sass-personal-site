@@ -1,11 +1,12 @@
 .about {
-	width: 80vw;
+	@include background('../assets/mephoto2.JPG');
 	margin: 0 auto;
 	padding-top: $paddingTop;
 	@include flexCenter(column);
-	height: 100%;
-	@include fadeIn;
+	height: 100vh;
+	background-position: 60%;
 
+	@include fadeIn;
 	h1 {
 		font-size: 0.9rem;
 	}
@@ -18,7 +19,7 @@
 
 .jobs {
 	margin: 3rem;
-	width: 75%;
+	width: 40vw;
 }
 
 .job {
@@ -32,14 +33,14 @@
 	h3 {
 		color: $subTextcolor;
 		margin: 1rem;
-		margin-top: 0;
+		margin-top: 1rem;
 		margin-bottom: 0;
 		font-size: 1rem;
 	}
 
 	h4 {
 		margin: 1rem;
-		margin-top: 0;
+		margin-top: 0.25rem;
 		margin-bottom: 0;
 
 		color: $textColor;
@@ -48,7 +49,8 @@
 
 	h5 {
 		margin: 1rem;
-		margin-top: 0;
+		margin-bottom: 0.25rem;
+		margin-top: 0.25rem;
 		color: $subTextcolor;
 		font-size: 1rem;
 	}

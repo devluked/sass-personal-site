@@ -1,8 +1,9 @@
 .home {
+	@include background('../assets/mephoto.JPG');
 	@include fadeIn;
 	padding-top: $paddingTop;
 	@include flexCenter(column);
-	height: 100%;
+	height: 100vh;
 
 	h1,
 	h2 {

@@ -55,6 +55,12 @@
 }
 
 .home {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.5))), url("../assets/mephoto.JPG") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.5)), url("../assets/mephoto.JPG") center top;
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+  background-size: cover;
+  z-index: -1 !important;
   -webkit-animation: fadeInAnimation ease 3s;
           animation: fadeInAnimation ease 3s;
   -webkit-animation-iteration-count: 1;
@@ -72,7 +78,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
+  height: 100vh;
 }
 
 .home h1,
@@ -113,8 +119,8 @@
 }
 
 .projects {
-  padding-top: 40vh;
-  padding-bottom: 3rem;
+  padding-top: 30vh;
+  padding-bottom: 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,8 +131,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 60vw;
-  margin: 0 auto;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.5))), url("../assets/mephoto3.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.5)), url("../assets/mephoto3.jpg") center top;
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+  background-size: cover;
+  z-index: -1 !important;
   height: 100vh;
   -webkit-animation: fadeInAnimation ease 3s;
           animation: fadeInAnimation ease 3s;
@@ -136,7 +146,8 @@
           animation-fill-mode: forwards;
 }
 
-.projects-project {
+.projects .projects-container {
+  width: 60vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,15 +158,30 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 80%;
+  margin: 0 auto;
+  height: 60vh;
+}
+
+.projects .projects-container .projects-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
   position: relative;
   border-bottom: 5px solid #ff7900;
   overflow: hidden;
   cursor: pointer;
-  margin: 0 2rem 2rem 4rem;
+  margin: 0 2rem 2rem 2rem;
 }
 
-.projects-project .icons-container {
+.projects .projects-container .projects-project .icons-container {
   opacity: 0.9;
   position: absolute;
   bottom: 0;
@@ -171,27 +197,27 @@
   border-top-left-radius: 1rem;
 }
 
-.projects-project:hover .icons-container {
+.projects .projects-container .projects-project:hover .icons-container {
   height: 100%;
 }
 
-.projects-project img {
+.projects .projects-container .projects-project img {
   max-width: 100%;
   max-height: 100%;
   padding-bottom: 3rem;
   color: white;
 }
 
-.projects-project hr {
+.projects .projects-container .projects-project hr {
   width: 100%;
 }
 
-.projects-project h1 {
+.projects .projects-container .projects-project h1 {
   font-size: 1rem;
   margin-bottom: 0px;
 }
 
-.projects-project .icons {
+.projects .projects-container .projects-project .icons {
   color: white;
   font-size: 20px;
   position: absolute;
@@ -217,16 +243,21 @@
   font-size: 1rem;
 }
 
-.projects-project .icons a {
+.projects .projects-container .projects-project .icons a {
   color: #fff;
 }
 
-.projects-project .icons a:hover {
+.projects .projects-container .projects-project .icons a:hover {
   color: black;
 }
 
 .about {
-  width: 80vw;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.5))), url("../assets/mephoto2.JPG") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.5)), url("../assets/mephoto2.JPG") center top;
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+  background-size: cover;
+  z-index: -1 !important;
   margin: 0 auto;
   padding-top: 40vh;
   display: -webkit-box;
@@ -239,7 +270,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
+  height: 100vh;
+  background-position: 60%;
   -webkit-animation: fadeInAnimation ease 3s;
           animation: fadeInAnimation ease 3s;
   -webkit-animation-iteration-count: 1;
@@ -259,7 +291,7 @@
 
 .jobs {
   margin: 3rem;
-  width: 75%;
+  width: 40vw;
 }
 
 .job {
@@ -279,14 +311,14 @@
 .job h3 {
   color: #ff7900;
   margin: 1rem;
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 0;
   font-size: 1rem;
 }
 
 .job h4 {
   margin: 1rem;
-  margin-top: 0;
+  margin-top: 0.25rem;
   margin-bottom: 0;
   color: #fff;
   font-size: 0.8rem;
@@ -294,7 +326,8 @@
 
 .job h5 {
   margin: 1rem;
-  margin-top: 0;
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
   color: #ff7900;
   font-size: 1rem;
 }
@@ -318,11 +351,13 @@
   body h2 {
     font-size: 4rem;
   }
-  .projects-project {
-    margin: 0 10px;
-    width: 60vw;
+  .projects .projects-container {
+    height: 80vh;
   }
-  .projects-project img {
+  .projects .projects-container .projects-project {
+    margin: 0 10px 3rem 0;
+  }
+  .projects .projects-container .projects-project img {
     padding-bottom: 3rem;
   }
   .navbar {
@@ -362,14 +397,14 @@
             flex-direction: row;
     padding-bottom: 7rem;
   }
-  .projects-project img {
-    padding-bottom: 1rem;
+  .projects .projects-container .projects-project {
+    width: 40%;
+  }
+  .projects .projects-container .projects-project img {
+    padding-bottom: 3rem;
   }
   .home .info-text {
     width: 40%;
-  }
-  .about {
-    width: 60vw;
   }
   .about h1 {
     font-size: 2.15rem;
@@ -383,6 +418,19 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .projects .projects-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 60%;
+  }
   .home .info-text {
     width: 550px;
   }
@@ -415,14 +463,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 1rem;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.5))), url("../assets/mephoto.JPG") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.5)), url("../assets/mephoto.JPG") center top;
-  background-repeat: no-repeat;
-  background-position: 50% 25%;
-  background-size: cover;
-  background-attachment: fixed !important;
-  z-index: -1 !important;
+  padding-top: 0rem;
 }
 
 header {

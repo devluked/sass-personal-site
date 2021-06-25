@@ -1,76 +1,82 @@
 .projects {
-	padding-top: $paddingTop;
-	padding-bottom: 3rem;
+	padding-top: $paddingTop + (-10vh);
+	padding-bottom: 7rem;
 	@include flexCenter(column);
+	@include background('../assets/mephoto3.jpg');
 
-	width: 60vw;
-	margin: 0 auto;
 	height: 100vh;
 	@include fadeIn;
 
-	&-project {
+	.projects-container {
+		width: 60vw;
 		@include flexCenter(column);
-		width: 80%;
-		position: relative;
-		border-bottom: 5px solid $subTextcolor;
-		overflow: hidden;
-		cursor: pointer;
-		margin: 0 2rem 2rem 4rem;
+		margin: 0 auto;
+		height: 60vh;
 
-		.icons-container {
-			opacity: 0.9;
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			background-color: $subTextcolor;
+		.projects-project {
+			@include flexCenter(column);
+			width: 60%;
+			position: relative;
+			border-bottom: 5px solid $subTextcolor;
 			overflow: hidden;
-			width: 100%;
-			height: 0;
-			transition: 0.5s ease;
-			border-top-right-radius: 1rem;
-			border-top-left-radius: 1rem;
-		}
+			cursor: pointer;
+			margin: 0 2rem 2rem 2rem;
 
-		&:hover .icons-container {
-			height: 100%;
-		}
+			.icons-container {
+				opacity: 0.9;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: $subTextcolor;
+				overflow: hidden;
+				width: 100%;
+				height: 0;
+				transition: 0.5s ease;
+				border-top-right-radius: 1rem;
+				border-top-left-radius: 1rem;
+			}
 
-		img {
-			max-width: 100%;
-			max-height: 100%;
-			padding-bottom: 3rem;
-			color: white;
-		}
+			&:hover .icons-container {
+				height: 100%;
+			}
 
-		hr {
-			width: 100%;
-		}
+			img {
+				max-width: 100%;
+				max-height: 100%;
+				padding-bottom: 3rem;
+				color: white;
+			}
 
-		h1 {
-			font-size: 1rem;
-			margin-bottom: 0px;
-		}
+			hr {
+				width: 100%;
+			}
 
-		.icons {
-			color: white;
-			font-size: 20px;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			-webkit-transform: translate(-50%, -50%);
-			-ms-transform: translate(-50%, -50%);
-			transform: translate(-50%, -50%);
-			text-align: center;
-			@include flexCenter(row);
-			width: 100%;
-			justify-content: space-evenly;
-			font-size: 1rem;
+			h1 {
+				font-size: 1rem;
+				margin-bottom: 0px;
+			}
 
-			a {
-				color: $textColor;
-				&:hover {
-					color: black;
+			.icons {
+				color: white;
+				font-size: 20px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				text-align: center;
+				@include flexCenter(row);
+				width: 100%;
+				justify-content: space-evenly;
+				font-size: 1rem;
+
+				a {
+					color: $textColor;
+					&:hover {
+						color: black;
+					}
 				}
 			}
 		}

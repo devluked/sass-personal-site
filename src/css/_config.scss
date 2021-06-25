@@ -23,17 +23,16 @@
 	}
 }
 
-@mixin background {
+@mixin background($img) {
 	background: linear-gradient(
 			to right,
 			rgba($backGround1, 0.9),
 			rgba($backGround1, 0.5)
 		),
-		url('../assets/mephoto.JPG') center top;
+		url($img) center top;
 	background-repeat: no-repeat;
 	background-position: 50% 25%;
 	background-size: cover;
-	background-attachment: fixed !important;
 	z-index: -1 !important;
 }
 

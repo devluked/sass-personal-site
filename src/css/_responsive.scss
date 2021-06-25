@@ -21,12 +21,14 @@
 	}
 
 	.projects {
-		&-project {
-			margin: 0 10px;
-			width: 60vw;
+		.projects-container {
+			height: 80vh;
+			.projects-project {
+				margin: 0 10px 3rem 0;
 
-			img {
-				padding-bottom: 3rem;
+				img {
+					padding-bottom: 3rem;
+				}
 			}
 		}
 	}
@@ -55,9 +57,12 @@
 		@include flexCenter(row);
 		padding-bottom: 7rem;
 
-		&-project {
-			img {
-				padding-bottom: 1rem;
+		.projects-container {
+			.projects-project {
+				width: 40%;
+				img {
+					padding-bottom: 3rem;
+				}
 			}
 		}
 	}
@@ -69,8 +74,6 @@
 	}
 
 	.about {
-		width: 60vw;
-
 		h1 {
 			font-size: 2.15rem;
 		}
@@ -86,6 +89,12 @@
 
 //1200px
 @include media-xl {
+	.projects {
+		.projects-container {
+			@include flexCenter(row);
+			width: 60%;
+		}
+	}
 	.home {
 		.info-text {
 			width: 550px;
