@@ -12,17 +12,17 @@ function Page(props) {
 	return (
 		<ScrollContainer>
 			<ScrollPage page={0}>
-				<Animator animation={Fade()}>
+				<Animator animation={Fade(0.4, 1)}>
 					<Home />
 				</Animator>
 			</ScrollPage>
 			<ScrollPage page={1}>
-				<Animator animation={Fade()}>
+				<Animator animation={Fade(0.4, 1)}>
 					<About />
 				</Animator>
 			</ScrollPage>
 			<ScrollPage page={2}>
-				<Animator animation={Fade()}>
+				<Animator animation={Fade(0.4, 1)}>
 					<Projects />
 				</Animator>
 			</ScrollPage>

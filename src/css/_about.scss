@@ -1,4 +1,6 @@
 .about {
+	scroll-snap-align: start;
+
 	@include background('../assets/mephoto2.JPG');
 	margin: 0 auto;
 	padding-top: $paddingTop;
@@ -19,7 +21,8 @@
 
 .jobs {
 	margin: 3rem;
-	width: 45vw;
+	margin-top: 1rem;
+	width: 50vw;
 }
 
 .job {

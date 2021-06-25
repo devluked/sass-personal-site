@@ -6,10 +6,15 @@
 @import 'about';
 @import 'responsive';
 
+html {
+	scroll-snap-type: y proximity;
+}
+
 body {
+	overflow-y: scroll;
+	overflow-x: hidden;
 	width: 80%;
 	margin: 0 auto;
-	height: 300vh;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	@include fadeIn;
 	@include flexCenter(column);

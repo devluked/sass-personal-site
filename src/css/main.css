@@ -252,6 +252,7 @@
 }
 
 .about {
+  scroll-snap-align: start;
   background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.5))), url("../assets/mephoto2.JPG") center top;
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.5)), url("../assets/mephoto2.JPG") center top;
   background-repeat: no-repeat;
@@ -291,7 +292,8 @@
 
 .jobs {
   margin: 3rem;
-  width: 45vw;
+  margin-top: 1rem;
+  width: 50vw;
 }
 
 .job {
@@ -445,10 +447,16 @@
   }
 }
 
+html {
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
+}
+
 body {
+  overflow-y: scroll;
+  overflow-x: hidden;
   width: 80%;
   margin: 0 auto;
-  height: 300vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-animation: fadeInAnimation ease 3s;
           animation: fadeInAnimation ease 3s;
