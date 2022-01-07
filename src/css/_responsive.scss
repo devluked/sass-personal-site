@@ -1,116 +1,88 @@
 //768px
 @include media-md {
-	.about {
-		h1 {
-			font-size: 2rem;
-		}
+  .about {
+    h1 {
+      font-size: 2rem;
+    }
 
-		h2 {
-			font-size: 1.8rem;
-			margin-top: 0;
-		}
-		.jobs {
-			width: 40vw;
-		}
-	}
-	body {
-		h1 {
-			font-size: 5rem;
-		}
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 0;
+    }
+    .jobs {
+      width: 40vw;
+    }
+  }
+  body {
+    h1 {
+      font-size: 5rem;
+    }
 
-		h2 {
-			font-size: 4rem;
-		}
-	}
+    h2 {
+      font-size: 4rem;
+    }
+  }
 
-	.projects {
-		.projects-container {
-			height: 70vh;
-			.projects-project {
-				margin: 0 10px 3rem 0;
+  .navbar {
+    font-size: 2rem;
+  }
 
-				img {
-					padding-bottom: 3rem;
-				}
-			}
-		}
-	}
+  .home {
+    .info-text {
+      @include flexCenter(row);
+      margin-left: 0;
+      width: 60%;
 
-	.navbar {
-		font-size: 2rem;
-	}
-
-	.home {
-		.info-text {
-			@include flexCenter(row);
-			margin-left: 0;
-			width: 60%;
-
-			p,
-			a {
-				font-size: 1.75rem;
-			}
-		}
-	}
+      p,
+      a {
+        font-size: 1.75rem;
+      }
+    }
+  }
 }
 
 //992px
 @include media-lg {
-	.projects {
-		@include flexCenter(row);
-		padding-bottom: 10rem;
+  .home {
+    .info-text {
+      width: 40%;
+    }
+  }
 
-		.projects-container {
-			.projects-project {
-				width: 40%;
-				img {
-					padding-bottom: 3rem;
-				}
-			}
-		}
-	}
+  .about {
+    h1 {
+      font-size: 2.15rem;
+    }
 
-	.home {
-		.info-text {
-			width: 40%;
-		}
-	}
-
-	.about {
-		h1 {
-			font-size: 2.15rem;
-		}
-
-		h2 {
-			font-size: 1.75rem;
-		}
-		h4 {
-			font-size: 1rem;
-		}
-	}
+    h2 {
+      font-size: 1.75rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+  }
 }
 
 //1200px
 @include media-xl {
-	.projects {
-		.projects-container {
-			@include flexCenter(row);
-			width: 60%;
-		}
-	}
-	.home {
-		.info-text {
-			width: 550px;
-		}
-	}
+  .projects {
+    .projects-container {
+      @include flexCenter(row);
+    }
+  }
+  .home {
+    .info-text {
+      width: 550px;
+    }
+  }
 
-	.about {
-		h1 {
-			font-size: 2.6rem;
-		}
+  .about {
+    h1 {
+      font-size: 2.6rem;
+    }
 
-		h2 {
-			font-size: 2rem;
-		}
-	}
+    h2 {
+      font-size: 2rem;
+    }
+  }
 }

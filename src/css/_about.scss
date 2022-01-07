@@ -1,65 +1,65 @@
 .about {
-	@include background('../assets/mephoto2.JPG');
-	margin: 0 auto;
-	padding-top: $paddingTop;
-	@include flexCenter(column);
-	height: 100vh;
-	width: 100vw;
+  @include background("../assets/mephoto2.JPG");
+  margin: 0 auto;
+  padding-top: 30vh;
+  @include flexCenter(column);
+  height: 100vh;
+  width: 100vw;
 
-	background-position: 60%;
+  background-position: 60%;
 
-	@include fadeIn;
-	h1 {
-		font-size: 0.9rem;
-	}
+  @include fadeIn;
+  h1 {
+    font-size: 0.9rem;
+  }
 
-	h2 {
-		font-size: 0.85rem;
-		margin-top: 0;
-	}
+  h2 {
+    font-size: 0.85rem;
+    margin-top: 0;
+  }
 }
 
 .jobs {
-	margin: 3rem;
-	margin-top: 1rem;
-	width: 50vw;
+  margin: 3rem;
+  margin-top: 1rem;
+  width: 50vw;
 }
 
 .job {
-	clear: both;
-	width: 100%;
-	background-color: $backGround1;
-	border-bottom: 4px solid $subTextcolor;
-	display: flex;
-	flex-direction: column;
+  clear: both;
+  width: 100%;
+  background-color: $backGround1;
+  border-bottom: 4px solid $subTextcolor;
+  display: flex;
+  flex-direction: column;
 
-	h3 {
-		color: $subTextcolor;
-		margin: 1rem;
-		margin-top: 1rem;
-		margin-bottom: 0;
-		font-size: 1rem;
-	}
+  h3 {
+    color: $subTextcolor;
+    margin: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
 
-	h4 {
-		margin: 1rem;
-		margin-top: 0.25rem;
-		margin-bottom: 0;
+  h4 {
+    margin: 1rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0;
 
-		color: $textColor;
-		font-size: 0.8rem;
-	}
+    color: $textColor;
+    font-size: 0.8rem;
+  }
 
-	h5 {
-		margin: 1rem;
-		margin-bottom: 0.25rem;
-		margin-top: 0.25rem;
-		color: $subTextcolor;
-		font-size: 1rem;
-	}
+  h5 {
+    margin: 1rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+    color: $subTextcolor;
+    font-size: 1rem;
+  }
 
-	#date {
-		margin-top: 0;
-		float: right;
-	}
+  #date {
+    margin-top: 0;
+    float: right;
+  }
 }
